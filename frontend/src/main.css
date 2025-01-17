@@ -1,0 +1,74 @@
+/* CUSTOM PROJECT SETTINGS STYLES */
+:root {
+  --background: white;
+  --test-color: black;
+}
+
+/* SET THE STYLES BASED ON THE USER SYSTEM PREFERENCES FOR DARK THEME OR LIGHT THEME */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --test-color: #ededed;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: white;
+    --test-color: black;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* font-family: "Zen Kaku Gothic New"; */
+  font-weight: normal;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* color: #e7f0ef; */
+}
+
+body {
+  background-color: #e7f0ef;
+}
+
+button,
+a {
+  background: none;
+  background-color: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  text-align: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+.test {
+  background-color: var(--test-color);
+}
+
+/* generalizing elements */
+
+/* For example, when you use appearance: none; on a <select> dropdown or a <button>, it will strip away the browser’s built-in styling, such as borders, shadows, and other native styles, so you can then style the element completely from scratch. */
