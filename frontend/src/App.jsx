@@ -1,5 +1,7 @@
+import Header from "./PageComponents/PageHead/Header";
+
 function App() {
-  return <h2 className="test">hello world!</h2>;
+  return <Header />;
 }
 
 export default App;

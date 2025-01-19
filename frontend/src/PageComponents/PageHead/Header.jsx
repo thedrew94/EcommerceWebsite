@@ -1,5 +1,13 @@
-import React from "react";
+import Background from "./Background";
+import Navbar from "./Navbar";
+import Banner from "./Banner";
 
 export default function Header() {
-  return <div>Header</div>;
+  return (
+    <header>
+      <Navbar />
+      <Background />
+      <Banner />
+    </header>
+  );
 }
