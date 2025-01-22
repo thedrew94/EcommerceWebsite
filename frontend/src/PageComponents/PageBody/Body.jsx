@@ -1,6 +1,7 @@
 import BackgroundBlobAnimation from "./BackgroundBlobAnimation";
 import ProductCard from "./ProductCard";
 import ShowroomContent from "./ShowroomContent";
+import Summary from "./Summary";
 
 const productsData = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
 
@@ -20,6 +21,7 @@ export default function Body() {
         <button type="button">&gt;</button>
       </div>
       <ShowroomContent />
+      <Summary />
     </main>
   );
 }
